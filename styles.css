@@ -2,3 +2,40 @@
     margin: 0;
     padding: 0;
 }
+.container {
+    padding: 16px;
+    margin: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+  }
+  .btn-container {
+    padding: 16px;
+  }
+  .display {
+    margin: auto;
+    height: 64px;
+    width: 380px;
+    border: 2px solid red;
+  }
+  .btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+  }
+  .btn-plus {
+    border: 2px solid blue;
+    grid-column: 4;
+    grid-row: 2 / span 2;
+  }
+  .btn-equal {
+    border: 2px solid red;
+    grid-column: 4;
+    grid-row: 4 / span 2;
+  }
+  .btn0 {
+    border: 2px solid blue;
+    grid-column: 1 / span 2;
+    grid-row: 5;
+  }
