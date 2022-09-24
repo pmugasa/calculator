@@ -1,19 +1,36 @@
+let a = 4;
+let b = 5;
 
-
-function add (a, b){
-return a + b
-}
-console.log(add(2,2))
-function subtract(a,b){
-    return a - b
-}
-console.log(subtract(2,2))
-function multiply(a,b){
-    return a * b
-}
-console.log(multiply(2,2))
-function divide(a, b){
-    return a/b
+// addition function
+function add(a, b) {
+  return a + b;
 }
 
+// subtract function
+function subtract(a, b) {
+  return a - b;
+}
 
+//multiply function
+function multiply(a, b) {
+  return a * b;
+}
+
+//divide function
+function divide(a, b) {
+  return a / b;
+}
+
+// a function that needs to take an operate
+// use this operate to call the function above
+function operate(c) {
+  if (c === "+") {
+    console.log(add(a, b));
+  } else if (c === "-") {
+    console.log(subtract(a, b));
+  } else if (c === "*") {
+    console.log(multiply(a, b));
+  } else if (c === " / ") {
+    console.log(divide(a, b));
+  }
+}
