@@ -31,12 +31,29 @@ function operate(c) {
     console.log(divide(a, b));
   }
 }
-
+let a = [];
+let b = [];
+let c = [];
 //adding button events
 const btns = document.querySelectorAll("button");
 btns.forEach((btn) => {
-  const values = btn.value;
   btn.addEventListener("click", () => {
-    console.log(values);
+    if (
+      btn.value !== "-" ||
+      btn.value !== "+" ||
+      btn.value !== "*" ||
+      btn.value !== "/"
+    ) {
+      a.push(btn.value);
+      console.log(a.join(""));
+    }
   });
 });
+
+//to calculate the user can enter as many numbers  as they can
+// these numbers are stored in an array
+// when the user clicks on the operate keys, the numbers that follow should be put in a new array
+// when a user clicks on the equal sign, this should then call the operate function to do the math
+
+//if any of the operating signs are not clicked the number should be put in array a
+// if the operating signs are clicked then the number should be put in array b
