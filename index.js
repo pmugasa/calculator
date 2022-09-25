@@ -1,6 +1,3 @@
-let a = 4;
-let b = 5;
-
 // addition function
 function add(a, b) {
   return a + b;
@@ -34,3 +31,9 @@ function operate(c) {
     console.log(divide(a, b));
   }
 }
+
+//adding button events
+const buttons = document.querySelectorAll('button')
+buttons.forEach(button => {
+  button.addEventListener('click', console.log("clicked"))
+} )
