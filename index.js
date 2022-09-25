@@ -33,7 +33,10 @@ function operate(c) {
 }
 
 //adding button events
-const buttons = document.querySelectorAll('button')
-buttons.forEach(button => {
-  button.addEventListener('click', console.log("clicked"))
-} )
+const btns = document.querySelectorAll("button");
+btns.forEach((btn) => {
+  const values = btn.value;
+  btn.addEventListener("click", () => {
+    console.log(values);
+  });
+});
